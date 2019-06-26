@@ -47,11 +47,20 @@ whitelist=$(cat whitelist.txt |tr "\n" "|")
  rm ads.txt
 
 
+#### mylists ####
+     echo -e "\t`wc -l lst/mylist.txt | cut -d " " -f 1` lines downloaded"
+
+ echo -e "\nFiltering non-url content..."
+ cat lst/mylist.txt | grep -v 'Malvertising list by Disconnect|^$' > mylists_parsed.txt
+
+
+
 cat ads_parsed.txt >> balcklist_unsort.txt
 cat hosts_parsed.txt >> balcklist_unsort.txt
 cat lists_parsed.txt >>  balcklist_unsort.txt
 cat google_parsed.txt >>  balcklist_unsort.txt
-rm ads_parsed.txt hosts_parsed.txt lists_parsed.txt google_parsed.txt
+cat mylists_parsed.txt >>  balcklist_unsort.txt
+rm ads_parsed.txt hosts_parsed.txt lists_parsed.txt google_parsed.txt mylists_parsed.txt
 
 echo -e "\t`wc -l balcklist_unsort.txt | cut -d " " -f 1` lines after parsing"
 
