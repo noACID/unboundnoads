@@ -32,7 +32,7 @@ whitelist=$(cat whitelist.txt |tr "\n" "|")
  done
 
  echo -e "\nFiltering non-url content..."
- cat ads.txt | grep -v 'Malvertising list by Disconnect|^$' > lists_parsed.txt
+ cat ads.txt | grep -v -E 'Malvertising list by Disconnect|^$|^#' > lists_parsed.txt
  rm ads.txt
 
 #### lists ####
@@ -50,8 +50,14 @@ whitelist=$(cat whitelist.txt |tr "\n" "|")
 #### mylists ####
      echo -e "\t`wc -l lst/mylist.txt | cut -d " " -f 1` lines downloaded"
 
- echo -e "\nFiltering non-url content..."
+ echo -e "\nFiltering non-url content... MyLists"
  cat lst/mylist.txt | grep -v 'Malvertising list by Disconnect|^$' > mylists_parsed.txt
+
+#### mywarez ####
+     echo -e "\t`wc -l lst/mywarez.txt | cut -d " " -f 1` lines downloaded"
+
+ echo -e "\nFiltering non-url content... MyWarez\n\n"
+ cat lst/mywarez.txt | grep -v 'Malvertising list by Disconnect|^$' > mywarez_parsed.txt
 
 
 
@@ -60,7 +66,8 @@ cat hosts_parsed.txt >> balcklist_unsort.txt
 cat lists_parsed.txt >>  balcklist_unsort.txt
 cat google_parsed.txt >>  balcklist_unsort.txt
 cat mylists_parsed.txt >>  balcklist_unsort.txt
-rm ads_parsed.txt hosts_parsed.txt lists_parsed.txt google_parsed.txt mylists_parsed.txt
+cat mywarez_parsed.txt >> balcklist_unsort.txt
+rm ads_parsed.txt hosts_parsed.txt lists_parsed.txt google_parsed.txt mylists_parsed.txt mywarez_parsed.txt
 
 echo -e "\t`wc -l balcklist_unsort.txt | cut -d " " -f 1` lines after parsing"
 
