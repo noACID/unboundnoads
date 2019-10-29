@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#set -x
+
 whitelist=$(cat whitelist.txt |tr "\n" "|")
 
 
@@ -24,26 +26,26 @@ whitelist=$(cat whitelist.txt |tr "\n" "|")
  cat ads.txt |grep -v -E '^#|^$' |grep -E '0.0.0.0|127.0.0.1' |awk '{print $2}'  > hosts_parsed.txt
  rm ads.txt
 
-#### lists ####
- for source in `cat lst/lists.lst`; do
+#### domains ####
+ for source in `cat lst/domains.lst`; do
      echo $source;
      curl --silent $source >> ads.txt
      echo -e "\t`wc -l ads.txt | cut -d " " -f 1` lines downloaded"
  done
 
  echo -e "\nFiltering non-url content..."
- cat ads.txt | grep -v -E 'Malvertising list by Disconnect|^$|^#' > lists_parsed.txt
+ cat ads.txt | grep -v -E 'Malvertising list by Disconnect|^$|^#' > domains_parsed.txt
  rm ads.txt
 
-#### lists ####
- for source in `cat lst/google.lst`; do
+#### hackertarget ####
+ for source in `cat lst/hackertarget.lst`; do
      echo $source;
      curl --silent $source >> ads.txt
      echo -e "\t`wc -l ads.txt | cut -d " " -f 1` lines downloaded"
  done
 
  echo -e "\nFiltering non-url content..."
- cat ads.txt | cut -d "," -f 1  > google_parsed.txt
+ cat ads.txt | cut -d "," -f 1  > hackertarget_parsed.txt
  rm ads.txt
 
 
@@ -63,11 +65,11 @@ whitelist=$(cat whitelist.txt |tr "\n" "|")
 
 cat ads_parsed.txt >> balcklist_unsort.txt
 cat hosts_parsed.txt >> balcklist_unsort.txt
-cat lists_parsed.txt >>  balcklist_unsort.txt
-cat google_parsed.txt >>  balcklist_unsort.txt
+cat domains_parsed.txt >>  balcklist_unsort.txt
+cat hackertarget_parsed.txt >>  balcklist_unsort.txt
 cat mylists_parsed.txt >>  balcklist_unsort.txt
 cat mywarez_parsed.txt >> balcklist_unsort.txt
-rm ads_parsed.txt hosts_parsed.txt lists_parsed.txt google_parsed.txt mylists_parsed.txt mywarez_parsed.txt
+rm ads_parsed.txt hosts_parsed.txt domains_parsed.txt hackertarget_parsed.txt mylists_parsed.txt mywarez_parsed.txt
 
 echo -e "\t`wc -l balcklist_unsort.txt | cut -d " " -f 1` lines after parsing"
 
@@ -80,7 +82,7 @@ echo -e "\t`wc -l ads_unique.txt | cut -d " " -f 1` lines after deduping"
 cat ads_unique.txt >> blacklist.txt
 sort -u blacklist.txt > blacklist.txt2
 rm blacklist.txt
-cat blacklist.txt2 |grep -v -E '^$|localhost' |grep -v -E "$whitelist" > blacklist.txt
+cat blacklist.txt2 |grep -v -E '^$|localhost|^0.0.0.0' |grep -v -E "$whitelist" > blacklist.txt
 rm ads_unique.txt blacklist.txt2
 
 
