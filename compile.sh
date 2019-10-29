@@ -2,8 +2,11 @@
 
 #set -x
 
-whitelist=$(cat whitelist.txt |tr "\n" "|")
+whitelist=$(cat whitelist.txt | sed -e 's/#.*$//' -e '/^\s*$/d' |tr "\n" "|")
+#whitelist=$(cat whitelist.txt | sed -e '/ *#/d; /^ *$/d' |tr "\n" "|")
 
+#echo $whitelist
+#exit 0
 
 #### ADB Block ####
  for source in `cat lst/adblock.lst`; do
