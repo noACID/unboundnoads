@@ -38,7 +38,6 @@ https://filters.adtidy.org/windows/filters/15.txt
  http://gurud.ee/ab.txt
  http://abp.mozilla-hispano.org/nauscopio/filtros.txt
  https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt
- http://pgl.yoyo.org/adservers/serverlist.php?hostformat
  https://adblock.dk/block.csv
  https://raw.githubusercontent.com/gioxx/xfiles/master/filtri.txt
  https://raw.githubusercontent.com/yous/YousList/master/youslist.txt
@@ -46,7 +45,7 @@ https://filters.adtidy.org/windows/filters/15.txt
  https://easylist-downloads.adblockplus.org/adwarefilters.txt
  https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt
  https://easylist-downloads.adblockplus.org/fanboy-social.txt
- https://www.i-dont-care-about-cookies.eu/
+ https://www.i-dont-care-about-cookies.eu/abp/
  https://easylist-downloads.adblockplus.org/malwaredomains_full.txt
  https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt
  https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt

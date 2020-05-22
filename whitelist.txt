@@ -1,1 +1,38 @@
-mxtads.com
+# my resources
+rutracker.wiki
+2ip.ru
+
+# forkplayer
+smartservic.tvigle.ru
+smartservice.tvigle.ru
+lge2.tvigle.ru
+lg.v4.tvigle.ru
+nettv.tvigle.ru
+movie.tizen.ivi.ru
+lg.ivi.ru
+tv.deezer.com
+
+# portaller
+pandora.com
+tuner.pandora.com
+www.spotify.com
+play.spotify.com
+apresolve.spotify.com
+weblb-wg.gslb.spotify.com
+lon3-weblb-a2.lon3.spotify.com
+ip2location.com
+atv-ext.amazon.com
+atv-ps.amazon.com
+netflix.com
+uiboot.netflix.com
+secure.netflix.com
+api-global.netflix.com
+nrdp.nccp.netflix.com
+ios.nccp.netflix.com
+android.nccp.netflix.com
+tunein.com
+radio.com
+streamtheworld.com
+hbogo.com
+hbo.com
+hbonow.com

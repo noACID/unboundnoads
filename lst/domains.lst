@@ -1,5 +1,5 @@
 https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
- https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&showintro=0&mimetype=plaintext
+ htps://pgl.yoyo.org/adservers/serverlist.php?showintro=0;hostformat=plain
  https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt
  https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt
  https://mirror1.malwaredomains.com/files/justdomains
