@@ -25,6 +25,7 @@ Configuration
 - Comments are prefixed by '#'.
 - Hostsfiles are prefixed by '@'.
 - Domain lists are prefixed by '&'.
+- hackertarget by '!'.
 - All other lines are assumed to be adblock filters.
 
 Copyright

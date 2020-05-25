@@ -1,0 +1,11 @@
+an.yandex.ru
+an.yandex.ua
+an.yandex.kz
+an.yandex.by
+awaps.yandex.net
+bs.yandex.ru
+direct.yandex.ru
+google-analytics.com
+googlesyndication.com
+mc.yandex.ru
+

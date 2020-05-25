@@ -1,4 +1,11 @@
+ads_hole.conf
+*_
 hosts
 hostsblock
 input
 output
+old_.git
+
+Copyright.txt
+compile.sh
+whitelist.txt

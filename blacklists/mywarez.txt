@@ -1,0 +1,9 @@
+# Alcohol 120%
+serial.alcohol-soft.com
+www.alcohol-soft.com
+images.alcohol-soft.com
+trial.alcohol-soft.com
+alcohol-soft.com
+# kmplayer
+player.kmpmedia.net
+
