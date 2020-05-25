@@ -8,4 +8,4 @@ old_.git
 
 Copyright.txt
 compile.sh
-whitelist.txt
+blacklist.txt
