@@ -12,7 +12,7 @@
 @https://winhelp2002.mvps.org/hosts.txt
 @https://hosts.nfz.moe/basic/hosts
 &https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
-@https://ssl.bblck.me/blacklists/hosts-file.txt
+#@https://ssl.bblck.me/blacklists/hosts-file.txt
 ## ✘) blue
 #@https://hostsfile.mine.nu/hosts0.txt
 #&https://v.firebog.net/hosts/BillStearns.txt
@@ -134,7 +134,7 @@ https://easylist-downloads.adblockplus.org/easyprivacy.txt
 http://adblock.gardar.net/is.abp.txt
 https://www.void.gr/kargig/void-gr-filters.txt
 https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt
-http://adblock.dajbych.net/adblock.txt
+#http://adblock.dajbych.net/adblock.txt
 http://gurud.ee/ab.txt
 http://abp.mozilla-hispano.org/nauscopio/filtros.txt
 https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt
