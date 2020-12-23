@@ -9,7 +9,7 @@
 &https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt
 @https://someonewhocares.org/hosts/zero/hosts
 @https://raw.githubusercontent.com/vokins/yhosts/master/hosts
-@https://winhelp2002.mvps.org/hosts.txt
+@http://winhelp2002.mvps.org/hosts.txt
 @https://hosts.nfz.moe/basic/hosts
 &https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
 #@https://ssl.bblck.me/blacklists/hosts-file.txt
@@ -25,7 +25,8 @@
 ## Advertising Lists
 ################################
 ## ✔) green
-@https://adaway.org/hosts.txt
+#@https://adaway.org/hosts.txt
+@https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
 &https://v.firebog.net/hosts/AdguardDNS.txt
 &https://v.firebog.net/hosts/Admiral.txt
 @https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
