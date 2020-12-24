@@ -134,7 +134,6 @@ https://easylist-downloads.adblockplus.org/easyprivacy.txt
 http://adblock.gardar.net/is.abp.txt
 https://www.void.gr/kargig/void-gr-filters.txt
 https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt
-http://adblock.dajbych.net/adblock.txt
 http://gurud.ee/ab.txt
 http://abp.mozilla-hispano.org/nauscopio/filtros.txt
 https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt
@@ -149,3 +148,4 @@ https://www.i-dont-care-about-cookies.eu/abp/
 https://easylist-downloads.adblockplus.org/malwaredomains_full.txt
 https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt
 https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt
+#http://pgl.yoyo.org/adservers/serverlist.php?hostformat
