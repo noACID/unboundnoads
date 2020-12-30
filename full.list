@@ -118,7 +118,6 @@ https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.
 https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt
 https://easylist-downloads.adblockplus.org/easylistitaly.txt
 https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt
-http://margevicius.lt/easylistlithuania.txt
 https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt
 https://notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt
 https://easylist-downloads.adblockplus.org/liste_ar+liste_fr+easylist.txt
@@ -135,7 +134,6 @@ https://easylist-downloads.adblockplus.org/easyprivacy.txt
 http://adblock.gardar.net/is.abp.txt
 https://www.void.gr/kargig/void-gr-filters.txt
 https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt
-http://adblock.dajbych.net/adblock.txt
 http://gurud.ee/ab.txt
 http://abp.mozilla-hispano.org/nauscopio/filtros.txt
 https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt
@@ -149,3 +147,4 @@ https://www.i-dont-care-about-cookies.eu/abp/
 https://easylist-downloads.adblockplus.org/malwaredomains_full.txt
 https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt
 https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt
+#http://pgl.yoyo.org/adservers/serverlist.php?hostformat
