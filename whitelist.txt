@@ -36,3 +36,6 @@ streamtheworld.com
 hbogo.com
 hbo.com
 hbonow.com
+
+# yandex
+yastatic.net
