@@ -79,6 +79,8 @@ while read L; do
 
 		## Download the file
 		wget -nv $(echo "$L" | sed 's/^[@|&|!]//') 2>&1 | tee wget.log
+#		wget -e http_proxy=http://vitali:Axwell100500@89.223.30.2:3128 -e https_proxy=https://vitali:Axwell100500@89.223.30.2:3128 -nv $(echo "$L" | sed 's/^[@|&|!]//') 2>&1 | tee wget.log
+#		wget -e https_proxy=https://vitali:Axwell100500@89.223.30.2:3128 -nv $(echo "$L" | sed 's/^[@|&|!]//') 2>&1 | tee wget.log
 #		wget --no-check-certificate -nv $(echo "$L" | sed 's/^[@|&|!]//') 2>&1 | tee wget.log
 		FILE=$(cat wget.log | sed 's/.*-> "//' | sed 's/".*//')
 		rm -f wget.log
