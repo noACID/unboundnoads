@@ -48,7 +48,6 @@
 @https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts
 @https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
 @https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt
-@https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/master/TOP_EU_US_Ads_Trackers_HOST
 ## ›) blue
 @https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt
 @https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
@@ -57,6 +56,7 @@
 &https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt
 ## ✘) blue
 #&https://v.firebog.net/hosts/Airelle-trc.txt
+#@https://raw.githubusercontent.com/Kees1958/W3C_annual_most_used_survey_blocklist/6b8c2411f22dda68b0b41757aeda10e50717a802/TOP_EU_US_Ads_Trackers_HOST
 
 ################################
 ## Malicious Lists
@@ -134,7 +134,7 @@ http://adblock.gardar.net/is.abp.txt
 https://www.void.gr/kargig/void-gr-filters.txt
 https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt
 http://gurud.ee/ab.txt
-https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt
+https://raw.githubusercontent.com/hufilter/hufilter/master/hufilter.txt
 https://adblock.dk/block.csv
 https://raw.githubusercontent.com/gioxx/xfiles/master/filtri.txt
 https://raw.githubusercontent.com/yous/YousList/master/youslist.txt
