@@ -92,8 +92,8 @@
 ################################
 ## hackertarget.lst
 ################################
-!https://api.hackertarget.com/hostsearch/?q=googlevideo.com
-!https://api.hackertarget.com/hostsearch/?q=gstatic.com
+#!https://api.hackertarget.com/hostsearch/?q=googlevideo.com
+#!https://api.hackertarget.com/hostsearch/?q=gstatic.com
 
 ################################
 ## adblock.lst

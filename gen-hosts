@@ -38,6 +38,10 @@ DOMAINSDIR='domains'
 HDIR='hackertarget'
 INDIR='input'
 OUTDIR='output'
+if [ -z $2 ];
+        then OUTPUTFILE=ads_hole.conf;
+        else OUTPUTFILE=${2}.conf;
+fi
 
 WHITELIST=$(cat $ROOT_PATH/whitelist.txt | sed -e 's/#.*$//' -e '/^\s*$/d' |tr "\n" "|")
 #BLACKLIST=$(cat $ROOT_PATH/blacklists/*.txt | sed -e 's/#.*$//' -e '/^\s*$/d' |tr "\n" "|")
@@ -139,10 +143,12 @@ for F in $(ls -1 "$OUTDIR/$HDIR"); do
 	cat "$OUTDIR/$HDIR/$F" >> $OUTDIR/blacklist
 done
 
-for F in $(ls -1 $ROOT_PATH/blacklists/*.txt); do
-	echo "$F"
-	cat "$F" >> $OUTDIR/blacklist
-done
+if [ -z $2 ]; then
+        for F in $(ls -1 $ROOT_PATH/blacklists/*.txt); do
+                echo "$F"
+                cat "$F" >> $OUTDIR/blacklist
+        done
+fi
 
 echo
 
@@ -154,7 +160,7 @@ cat $OUTDIR/blacklist | sed 's/^.*#.*$//' | sed 's/127\.0\.0\.1//'  | sed 's/0\.
 #cat "$OUTDIR/balcklist" >> hosts
 echo
 
-cat $ROOT_PATH/hosts |awk '{print "server:\nlocal-data: \""$1" A 0.0.0.0\""}' > ads_hole.conf
+cat $ROOT_PATH/hosts |awk '{print "server:\nlocal-data: \""$1" A 0.0.0.0\""}' > ${OUTPUTFILE}
 
 ## Done
 #rm -rf "$ADBLOCKDIR" "$OUTDIR"
