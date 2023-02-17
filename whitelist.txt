@@ -39,3 +39,8 @@ hbonow.com
 
 # yandex
 yastatic.net
+github.io
+habr.com
+
+# exclude with bug
+www..clickcease.com
