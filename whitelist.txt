@@ -44,3 +44,4 @@ habr.com
 
 # exclude with bug
 www..clickcease.com
+welcome..org
